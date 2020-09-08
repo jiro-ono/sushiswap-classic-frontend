@@ -43,6 +43,7 @@ const StyledTitle = styled.h1`
   font-family: 'Kaushan Script', sans-serif;
   color: ${(props) => props.theme.color.grey[600]};
   font-size: 36px;
+  text-align: center;
   font-weight: 700;
   margin: 0;
   padding: 0;

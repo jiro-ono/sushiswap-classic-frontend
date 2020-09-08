@@ -18,8 +18,8 @@ const useAllowance = (lpContract: Contract) => {
   const fetchAllowance = useCallback(async () => {
     const allowance = await getAllowance(
       lpContract,
-      masterChefContract,
       account,
+      masterChefContract.options.address,
     )
     setAllowance(new BigNumber(allowance))
   }, [account, masterChefContract, lpContract])
