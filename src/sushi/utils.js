@@ -136,6 +136,10 @@ export const getSushiSupply = async (sushi) => {
   return new BigNumber(await sushi.contracts.sushi.methods.totalSupply().call())
 }
 
+export const getXSushiSupply = async (sushi) => {
+  return new BigNumber(await sushi.contracts.xSushiStaking.methods.totalSupply().call())
+}
+
 export const stake = async (masterChefContract, pid, amount, account) => {
   return masterChefContract.methods
     .deposit(
