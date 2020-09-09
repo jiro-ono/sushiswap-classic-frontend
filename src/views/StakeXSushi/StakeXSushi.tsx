@@ -1,16 +1,17 @@
-import React, {useEffect, useMemo} from 'react'
+import React, {useEffect, useMemo, useState} from 'react'
 import styled from 'styled-components'
 import {useWallet} from 'use-wallet'
 import {provider} from 'web3-core'
 import Spacer from '../../components/Spacer'
 import useSushi from '../../hooks/useSushi'
-import {getXSushiStakingContract} from '../../sushi/utils'
 import {getContract} from '../../utils/erc20'
 import UnstakeXSushi from './components/UnstakeXSushi'
 import StakeSushi from "./components/StakeSushi";
 
 import {contractAddresses} from '../../sushi/lib/constants'
-import useEnter from "../../hooks/useEnter";
+import {getXSushiSupply} from "../../sushi/utils";
+import BigNumber from "bignumber.js";
+import {getBalanceNumber} from "../../utils/formatBalance";
 
 const StakeXSushi: React.FC = () => {
   const {
@@ -19,12 +20,26 @@ const StakeXSushi: React.FC = () => {
     tokenAddress: contractAddresses.xSushi[1],
   }
 
+  const [totalSupply, setTotalSupply] = useState<BigNumber>()
+
+  const sushi = useSushi()
+  const {ethereum} = useWallet()
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 
-  const sushi = useSushi()
-  const {ethereum} = useWallet()
+  useEffect(() => {
+    async function fetchTotalSupply() {
+      const supply = await getXSushiSupply(sushi)
+      setTotalSupply(supply)
+    }
+    if (sushi) {
+      fetchTotalSupply()
+    }
+  }, [sushi, setTotalSupply])
+
+
 
   const lpContract = useMemo(() => {
     debugger
@@ -53,7 +68,7 @@ const StakeXSushi: React.FC = () => {
               ℹ️️ You will earn a portion of the swaps fees based on the amount
               of xSushi held relative the weight of the staking. xSushi can be minted
               by staking Sushi. To redeem Sushi staked plus swap fees convert xSushi
-              back to Sushi.
+              back to Sushi. {totalSupply ? `There are currently ${getBalanceNumber(totalSupply)} xSUSHI in the whole pool.` : '' }
             </StyledInfo>
           </StyledCardWrapper>
         </StyledCardsWrapper>
