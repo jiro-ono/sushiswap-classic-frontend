@@ -50,13 +50,10 @@ const StakeXSushi: React.FC = () => {
         <StyledCardsWrapper>
           <StyledCardWrapper>
             <StyledInfo>
-              ℹ️️ You can stake your SUSHI tokens for xSUSHI (SushiBar) tokens on a 1:1 basis which
-              allows you to get a
-              portion of swap fees initiated on SushiSwap. The fee you get (converted to SUSHI from
-              any swap) is based on
-              the
-              percentage of shares you own in the xSUSHI pool. There are currently XXX xSUSHI tokens
-              in the pool.
+              ℹ️️ You will earn a portion of the swaps fees based on the amount
+              of xSushi held relative the weight of the staking. xSushi can be minted
+              by staking Sushi. To redeem Sushi staked plus swap fees convert xSushi
+              back to Sushi.
             </StyledInfo>
           </StyledCardWrapper>
         </StyledCardsWrapper>

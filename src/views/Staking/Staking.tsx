@@ -24,8 +24,8 @@ const Staking: React.FC = () => {
             <Route exact path={path}>
               <PageHeader
                 icon={<img src={chef} height="120"/>}
-                subtitle="Stake SUSHI tokens to earn SushiBar (xSUSHI) and get a portion of the swap fees on SushiSwap!"
-                title="Sushi holders, get a cut from swap fees!"
+                subtitle="Welcome to the Sushi Bar, stake Sushi to earn Sushi."
+                title="Irasshaimase!"
               />
             </Route>
             <StakeXSushi/>
