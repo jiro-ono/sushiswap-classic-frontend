@@ -74,7 +74,7 @@ async function handleEvent(eventOG) {
 
 
 
-  //options.mapRequestToAsset = handlePrefix(pattern)
+  options.mapRequestToAsset = handlePrefix(pattern)
 
   try {
     if (DEBUG) {
