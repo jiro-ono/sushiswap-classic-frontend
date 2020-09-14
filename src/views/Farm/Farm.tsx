@@ -80,7 +80,13 @@ const Farm: React.FC = () => {
           ⭐️ Every time you stake and unstake LP tokens, the contract will
           automagically harvest SUSHI rewards for you!
         </StyledInfo>
-        <Spacer size="lg" />
+        <Spacer size="md" />
+        <StyledLink
+          target="__blank"
+          href={`https://sushiswap.vision/pair/${lpTokenAddress}`}
+        >
+          {lpTokenName} Info
+        </StyledLink>
       </StyledFarm>
     </>
   )
@@ -121,6 +127,16 @@ const StyledInfo = styled.h3`
   margin: 0;
   padding: 0;
   text-align: center;
+`
+
+const StyledLink = styled.a`
+  color: ${(props) => props.theme.color.grey[400]};
+  padding-left: ${(props) => props.theme.spacing[3]}px;
+  padding-right: ${(props) => props.theme.spacing[3]}px;
+  text-decoration: none;
+  &:hover {
+    color: ${(props) => props.theme.color.grey[500]};
+  }
 `
 
 export default Farm

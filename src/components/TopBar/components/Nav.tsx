@@ -21,7 +21,7 @@ const Nav: React.FC = () => {
         Exchange
       </StyledAbsoluteLink>
       <StyledAbsoluteLink
-        href="https://medium.com/sushiswap-org/the-sushiswap-project-8716c429cee1"
+        href="https://help.sushidocs.com/"
         target="_blank"
       >
         About
