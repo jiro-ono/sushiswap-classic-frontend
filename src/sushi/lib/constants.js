@@ -86,6 +86,19 @@ export const supportedPools = [
     icon: '🍣',
   },
   {
+    pid: 18,
+    lpAddresses: {
+      1: '0xdafd66636e2561b0284edde37e42d192f2844d40', //change this
+    },
+    tokenAddresses: {
+      1: '0x1f9840a85d5af5bf1d1762f925bdaddc4201f984',
+    },
+    name: 'UNI Unicorn',
+    symbol: 'UNI-ETH SLP',
+    tokenSymbol: 'UNI',
+    icon: '🦄',
+  },
+  {
     pid: 0,
     lpAddresses: {
       1: '0x06da0fd433C1A5d7a4faa01111c044910A184553',
