@@ -47,7 +47,7 @@ const Farm: React.FC = () => {
   const { onRedeem } = useRedeem(getMasterChefContract(sushi))
 
   const lpTokenName = useMemo(() => {
-    return lpToken.toUpperCase()
+    return lpToken
   }, [lpToken])
 
   const earnTokenName = useMemo(() => {
@@ -71,7 +71,7 @@ const Farm: React.FC = () => {
             <Stake
               lpContract={lpContract}
               pid={pid}
-              tokenName={lpToken.toUpperCase()}
+              tokenName={lpToken}
             />
           </StyledCardWrapper>
         </StyledCardsWrapper>

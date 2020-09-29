@@ -16,7 +16,7 @@ const Nav: React.FC = () => {
       >
         SushiSwap SUSHI-ETH
       </StyledLink> */}
-      <StyledLink target="_blank" href="https://discord.gg/hJ2p555">
+      <StyledLink target="_blank" href="https://discord.gg/sqhXAqc">
         Discord
       </StyledLink>
       <StyledLink target="_blank" href="https://github.com/sushiswap">

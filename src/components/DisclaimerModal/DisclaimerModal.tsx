@@ -1,4 +1,5 @@
 import React, { useCallback, useState, useMemo } from 'react'
+import styled from 'styled-components'
 
 import Button from '../Button'
 import CardIcon from '../CardIcon'
@@ -10,6 +11,15 @@ import ModalTitle from '../ModalTitle'
 interface DisclaimerModal extends ModalProps {
   onConfirm: () => void
 }
+
+const StyledLink = styled.a`
+  color: ${(props) => props.theme.color.grey[400]};
+  padding-left: 25%;
+  text-decoration: none;
+  &:hover {
+    color: ${(props) => props.theme.color.grey[500]};
+  }
+`
 
 const DisclaimerModal: React.FC<DisclaimerModal> = ({
   onConfirm,
@@ -26,31 +36,24 @@ const DisclaimerModal: React.FC<DisclaimerModal> = ({
     if (step === 'disclaimer') {
       return (
         <div>
-          <p>Audits: None.</p>
-          <p>
-            While the initial creators of the Sushi protocol have made
-            reasonable efforts to attempt to ensure the security of the
-            contracts, including forking much of the codebase from existing
-            well-audited projects and soliciting review from friends, nothing
-            approaching the rigor of a formal audit has been conducted at this
-            time.
+          <p> With great pleasure we would like to invite you the launch
+              of Omakase Bar!
           </p>
-          <p>
-            We STRONGLY urge caution to anyone who chooses to engage with these
-            contracts.
+          <p> Omakase Bar will be the home of our new frontend, and provides
+              an interface for all interactions with the SushiSwap protocol.
+          </p>
+          <p> Development will be on going, and sushiswapclassic will still
+              exist in the interim as we work to get Omakase Bar completely
+              polished.
           </p>
         </div>
       )
     } else {
       return (
         <div>
-          <p>Attention SUSHI Sushiswap LPs</p>
-          <p>
-            The only Sushiswap pool that is compatible with SUSHI is SUSHI/yCRV
-            (Curve yPool tokens)
-          </p>
-          <p>Providing liquidity for other Sushiswap pools is dangerous</p>
-          <p>You will LOSE your share of rebases</p>
+          <StyledLink target="_blank" href="https://sushiswap.fi">
+            Click here to access Omakase Bar.
+          </StyledLink>
         </div>
       )
     }
@@ -66,14 +69,13 @@ const DisclaimerModal: React.FC<DisclaimerModal> = ({
         />
       )
     } else {
-      return <Button text="I understand" onClick={handleConfirm} />
+      return <Button text="Continue To Classic" onClick={handleConfirm} />
     }
   }, [setStep, step, handleConfirm])
 
   return (
     <Modal>
-      <ModalTitle text={`Warning`} />
-      <CardIcon>⚠️</CardIcon>
+      <ModalTitle text={`Announcement`} />
       <ModalContent>{modalContent}</ModalContent>
       <ModalActions>{button}</ModalActions>
     </Modal>
