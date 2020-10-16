@@ -320,6 +320,138 @@ export const supportedPools = [
     icon: '🐊',
   },
   {
+    pid: 22,
+    lpAddresses: {
+      1: '0xf169CeA51EB51774cF107c88309717ddA20be167',
+    },
+    tokenAddresses: {
+      1: '0x2ba592F78dB6436527729929AAf6c908497cB200',
+    },
+    name: "Chef's Menu",
+    symbol: 'CREAM-ETH SLP',
+    tokenSymbol: 'CREAM',
+    icon: '👨🏻‍🍳',
+  },
+  {
+    pid: 24,
+    lpAddresses: {
+      1: '0xFcff3b04C499A57778ae2CF05584ab24278A7FCb',
+    },
+    tokenAddresses: {
+      1: '0x0d438f3b5175bebc262bf23753c1e53d03432bde',
+    },
+    name: "Chef's Menu",
+    symbol: 'wNXM-ETH SLP',
+    tokenSymbol: 'wNXM',
+    icon: '👨🏻‍🍳',
+  },
+  {
+    pid: 25,
+    lpAddresses: {
+      1: '0x382c4a5147Fd4090F7BE3A9Ff398F95638F5D39E',
+    },
+    tokenAddresses: {
+      1: '0x5dbcf33d8c2e976c6b560249878e6f1491bca25c',
+    },
+    name: "Chef's Menu",
+    symbol: 'yUSD-ETH SLP',
+    tokenSymbol: 'yUSD',
+    icon: '‍👨🏻‍🍳',
+  },
+/////////
+  {
+    pid: 36,
+    lpAddresses: {
+      1: '0x742c15d71ea7444964bc39b0ed729b3729adc361',
+    },
+    tokenAddresses: {
+      1: '0xd26114cd6EE289AccF82350c8d8487fedB8A0C07',
+    },
+    name: "Chef's Menu",
+    symbol: 'OMG-ETH SLP',
+    tokenSymbol: 'OMG',
+    icon: '‍👨🏻‍🍳',
+  },
+  {
+    pid: 35,
+    lpAddresses: {
+      1: '0x269db91fc3c7fcc275c2e6f22e5552504512811c',
+    },
+    tokenAddresses: {
+      1: '0x429881672B9AE42b8EbA0E26cD9C73711b891Ca5',
+    },
+    name: "Chef's Menu",
+    symbol: 'PICKLE-ETH SLP',
+    tokenSymbol: 'PICKLE',
+    icon: '‍👨🏻‍🍳',
+  },
+  {
+    pid: 34,
+    lpAddresses: {
+      1: '0x68c6d02d44e16f1c20088731ab032f849100d70f',
+    },
+    tokenAddresses: {
+      1: '0x62359Ed7505Efc61FF1D56fEF82158CcaffA23D7',
+    },
+    name: "Chef's Menu",
+    symbol: 'CORE-ETH SLP',
+    tokenSymbol: 'CORE',
+    icon: '‍👨🏻‍🍳',
+  },
+  {
+    pid: 33,
+    lpAddresses: {
+      1: '0xba13afecda9beb75de5c56bbaf696b880a5a50dd',
+    },
+    tokenAddresses: {
+      1: '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2',
+    },
+    name: "Chef's Menu",
+    symbol: 'MKR-ETH SLP',
+    tokenSymbol: 'MKR',
+    icon: '‍👨🏻‍🍳',
+  },
+  {
+    pid: 32,
+    lpAddresses: {
+      1: '0x2dbc7dd86c6cd87b525bd54ea73ebeebbc307f68',
+    },
+    tokenAddresses: {
+      1: '0x8dAEBADE922dF735c38C80C7eBD708Af50815fAa',
+    },
+    name: "Chef's Menu",
+    symbol: 'wBTC-tBTC SLP',
+    tokenSymbol: 'tBTC',
+    icon: '‍👨🏻‍🍳',
+  },
+  {
+    pid: 31,
+    lpAddresses: {
+      1: '0x6463bd6026a2e7bfab5851b62969a92f7cca0eb6',
+    },
+    tokenAddresses: {
+      1: '0x584bC13c7D411c00c01A62e8019472dE68768430',
+    },
+    name: "Chef's Menu",
+    symbol: 'HEGIC-ETH SLP',
+    tokenSymbol: 'HEGIC',
+    icon: '‍👨🏻‍🍳',
+  },
+  {
+    pid: 37,
+    lpAddresses: {
+      1: '0xD75EA151a61d06868E31F8988D28DFE5E9df57B4',
+    },
+    tokenAddresses: {
+      1: '0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9',
+    },
+    name: "Chef's Menu",
+    symbol: 'AAVE-ETH SLP',
+    tokenSymbol: 'AAVE',
+    icon: '‍👨🏻‍🍳',
+  },
+///////
+  {
     pid: 19,
     lpAddresses: {
       1: '0x36e2FCCCc59e5747Ff63a03ea2e5C0c2C14911e7',
@@ -327,10 +459,10 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x8798249c2E607446EfB7Ad49eC89dD1865Ff4272',
     },
-    name: "Chef's Menu",
+    name: "Past Menu",
     symbol: 'xSUSHI-ETH SLP',
     tokenSymbol: 'xSUSHI',
-    icon: '👨🏻‍🍳',
+    icon: '🚫',
   },
   {
    pid: 20,
@@ -340,10 +472,10 @@ export const supportedPools = [
    tokenAddresses: {
      1: '0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643',
    },
-   name: "Chef's Menu",
+   name: "Past Menu",
    symbol: 'cDAI-DAI SLP',
    tokenSymbol: 'cDAI',
-   icon: '‍👨🏻‍🍳',
+   icon: '🚫',
  },
  {
    pid: 21,
@@ -353,23 +485,10 @@ export const supportedPools = [
    tokenAddresses: {
      1: '0x2260fac5e5542a773aa44fbcfedf7c193bc2c599',
    },
-   name: "Chef's Menu",
+   name: "Past Menu",
    symbol: 'WBTC-ETH SLP',
    tokenSymbol: 'WBTC',
-   icon: '👨🏻‍🍳',
- },
- {
-   pid: 22,
-   lpAddresses: {
-     1: '0xf169CeA51EB51774cF107c88309717ddA20be167',
-   },
-   tokenAddresses: {
-     1: '0x2ba592F78dB6436527729929AAf6c908497cB200',
-   },
-   name: "Chef's Menu",
-   symbol: 'CREAM-ETH SLP',
-   tokenSymbol: 'CREAM',
-   icon: '👨🏻‍🍳',
+   icon: '‍🚫',
  },
  {
    pid: 23,
@@ -379,36 +498,10 @@ export const supportedPools = [
    tokenAddresses: {
      1: '0xD5525D397898e5502075Ea5E830d8914f6F0affe',
    },
-   name: "Chef's Menu",
+   name: "Past Menu",
    symbol: 'MEME-ETH SLP',
    tokenSymbol: 'MEME',
-   icon: '👨🏻‍🍳',
- },
- {
-   pid: 24,
-   lpAddresses: {
-     1: '0xFcff3b04C499A57778ae2CF05584ab24278A7FCb',
-   },
-   tokenAddresses: {
-     1: '0x0d438f3b5175bebc262bf23753c1e53d03432bde',
-   },
-   name: "Chef's Menu",
-   symbol: 'wNXM-ETH SLP',
-   tokenSymbol: 'wNXM',
-   icon: '👨🏻‍🍳',
- },
- {
-   pid: 25,
-   lpAddresses: {
-     1: '0x382c4a5147Fd4090F7BE3A9Ff398F95638F5D39E',
-   },
-   tokenAddresses: {
-     1: '0x5dbcf33d8c2e976c6b560249878e6f1491bca25c',
-   },
-   name: "Chef's Menu",
-   symbol: 'yUSD-ETH SLP',
-   tokenSymbol: 'yUSD',
-   icon: '👨🏻‍🍳',
+   icon: '🚫',
  },
  {
    pid: 26,
@@ -418,10 +511,10 @@ export const supportedPools = [
    tokenAddresses: {
      1: '0x5dbcf33d8c2e976c6b560249878e6f1491bca25c',
    },
-   name: "Chef's Menu",
+   name: "Past Menu",
    symbol: 'yUSD-WBTC SLP',
    tokenSymbol: 'yUSD',
-   icon: '👨🏻‍🍳',
+   icon: '‍🚫',
  },
  {
    pid: 27,
@@ -431,10 +524,10 @@ export const supportedPools = [
    tokenAddresses: {
      1: '0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b',
    },
-   name: "Chef's Menu",
+   name: "Past Menu",
    symbol: 'CRO-ETH SLP',
    tokenSymbol: 'CRO',
-   icon: '👨🏻‍🍳',
+   icon: '‍🚫',
  },
  {
    pid: 28,
@@ -444,9 +537,9 @@ export const supportedPools = [
    tokenAddresses: {
      1: '0xeb4c2781e4eba804ce9a9803c67d0893436bb27d',
    },
-   name: "Chef's Menu",
+   name: "Past Menu",
    symbol: 'renBTC-WBTC SLP',
    tokenSymbol: 'renBTC',
-   icon: '👨🏻‍🍳',
+   icon: '‍‍🚫',
  },
 ]
